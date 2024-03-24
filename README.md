@@ -1,4 +1,5 @@
-welcome to the repository
+welcome to the repository !!
+<br/>
 Instrunctions to run the code locally:
 * clone the repository using command git clone
 * after cloning go the client folder using command cd client
