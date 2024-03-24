@@ -1,0 +1,60 @@
+.input{
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #EABE6C;
+    height: 2rem;
+    margin-top: 2rem;
+}
+
+.input-field{
+    font-size: .9rem;
+    border: none;
+}
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 5px solid red; */
+}
+
+.detect-btn{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar width */
+    background: transparent; /* Make scrollbar transparent */
+}
+
+.btn{
+    padding-top:0.4rem;
+    padding-bottom:0.4rem;
+    padding-left:1.1rem;
+    padding-right: 1.1rem;
+    font-size: 1.1rem;
+    border: none;
+    background-color: rgb(117, 29, 73)  ;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.processed_image{
+    color: rgb(15, 167, 15);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.original_image{
+    color: red;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+

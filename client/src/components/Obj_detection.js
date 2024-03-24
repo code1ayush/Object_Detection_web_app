@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Navbar from './Navbar';
+import "../obj_detection.css"
 
 const ObjectDetectionApp = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -36,22 +38,36 @@ const ObjectDetectionApp = () => {
 
   return (
     <div>
-      <input type="file" onChange={handleFileChange} />
+      <Navbar/>
+      <div className='input'>
+      <input className= "input-field" type="file" onChange={handleFileChange} />
+      </div>
+      <div style={{display:"flex",justifyContent:"center", alignItems:'center'}}>
+      { !selectedFile && (
+         <div style={{fontSize:"1.5rem",fontWeight:"600",paddingTop:"1rem"}}>
+          Please insert the image to Detect
+         </div>
+      )}
+      </div>
+      <div className='image-container'>
       {originalImage && (
         <div>
-          <p>Original Image</p>
+          <p className='original_image' >Original Image</p>
           <img style ={{width:"400px",height:"auto"}} src={originalImage} alt="Original Image" />
         </div>
       )}
       {processedImage && (
-        <div>
-          <p>Processed Image</p>
+        <div style={{paddingLeft:"3rem"}}>
+          <p className='processed_image'>Processed Image</p>
           <img style ={{width:"400px",height:"auto"}} src={processedImage} alt="Processed Image" />
         </div>
       )}
-      { (
-        <button onClick={handleUpload}>Detect Objects</button>
+      </div >
+      <div className='detect-btn'>
+      { selectedFile && (
+        <button className='btn' onClick={handleUpload}>Detect Objects</button>
       )}
+      </div>
     </div>
   );
 };
