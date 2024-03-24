@@ -6,7 +6,7 @@ import { FaHome } from "react-icons/fa";
 const Navbar = () =>{
     return(
         <div className="navbar">
-          <div className="logo">Image_Detector</div>
+          <div className="logo">Object_Detector</div>
           <Link to="/"><FaHome className="home-icon"/></Link>
         </div>
     )
