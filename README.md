@@ -1,7 +1,7 @@
 welcome to the repository !!
 <br/>
 Instrunctions to run the code locally:
-* clone the repository using command git clone
+* clone the repository using command git clone https://github.com/code1ayush/Object_Detection_web_app.git
 * after cloning go the client folder using command cd client
 * install client dependencies using npm install
 * After that go to server folder
